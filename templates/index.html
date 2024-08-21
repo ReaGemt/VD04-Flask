@@ -1,24 +1,25 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home Page</title>
+    <title>Главная страница</title>
     <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
 </head>
 <body>
     <header>
         <nav>
             <ul>
-                <li><a href="/">Home</a></li>
-                <li><a href="/blog">Blog</a></li>
-                <li><a href="/contacts">Contacts</a></li>
+                <li><a href="/">Главная</a></li>
+                <li><a href="/blog">Блог</a></li>
+                <li><a href="/contacts">Контакты</a></li>
+                <li><a href="/about">О нас</a></li>
             </ul>
         </nav>
     </header>
-    <h1>Welcome to the Home Page</h1>
-    <p>This is the main page of our Flask website.</p>
-    <h2>Current Date and Time:</h2>
+    <h1>Добро пожаловать на главную страницу</h1>
+    <p>Это основная страница нашего сайта на Flask.</p>
+    <h2>Текущая дата и время:</h2>
     <p>{{ current_time }}</p>
 </body>
 </html>
