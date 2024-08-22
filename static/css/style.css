@@ -1,3 +1,4 @@
+/* Общие стили для всего сайта */
 body {
     font-family: Arial, sans-serif;
     background-color: #f4f4f4;
@@ -5,6 +6,7 @@ body {
     padding: 0;
 }
 
+/* Стили для шапки и навигации */
 header {
     background-color: #333;
     color: #fff;
@@ -32,49 +34,63 @@ nav ul li a:hover {
     text-decoration: underline;
 }
 
+/* Стили для заголовков и параграфов */
 h1, h2, p {
     text-align: center;
 }
 
+/* Стили для формы */
 form {
-    max-width: 500px;
-    margin: 20px auto;
-    padding: 10px;
-    background-color: #fff;
-    border: 1px solid #ddd;
-    border-radius: 5px;
+    max-width: 600px; /* Ограничение максимальной ширины формы */
+    margin: 20px auto; /* Центрирование формы на странице */
+    padding: 20px; /* Внутренний отступ формы */
+    background-color: #fff; /* Цвет фона формы */
+    border: 1px solid #ddd; /* Граница формы */
+    border-radius: 5px; /* Радиус скругления углов формы */
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); /* Легкая тень для формы */
 }
 
 form label {
-    display: block;
-    margin-bottom: 5px;
-    font-weight: bold;
+    display: block; /* Блочный вывод для меток формы */
+    margin-bottom: 5px; /* Отступ снизу для меток */
+    font-weight: bold; /* Жирный текст для меток */
 }
 
 form input[type="text"],
 form input[type="email"],
 form textarea {
-    width: 100%;
-    padding: 8px;
-    margin-bottom: 10px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
+    width: 100%; /* Ширина элементов формы */
+    padding: 10px; /* Внутренний отступ для полей ввода */
+    margin-bottom: 15px; /* Отступ снизу для полей ввода */
+    border: 1px solid #ccc; /* Граница для полей ввода */
+    border-radius: 4px; /* Радиус скругления углов полей ввода */
+    box-sizing: border-box; /* Учет границ и отступов в общей ширине */
+}
+
+form textarea {
+    height: 100px; /* Увеличение высоты текстового поля */
+    resize: vertical; /* Разрешение изменения высоты пользователем */
 }
 
 form button {
-    padding: 10px 15px;
-    background-color: #333;
-    color: #fff;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
+    width: 100%; /* Кнопка на всю ширину формы */
+    padding: 12px; /* Внутренний отступ кнопки */
+    background-color: #333; /* Цвет фона кнопки */
+    color: #fff; /* Цвет текста кнопки */
+    border: none; /* Убираем границу */
+    border-radius: 4px; /* Радиус скругления углов кнопки */
+    cursor: pointer; /* Указатель мыши */
+    font-size: 16px; /* Размер шрифта кнопки */
 }
 
 form button:hover {
-    background-color: #555;
+    background-color: #555; /* Изменение цвета кнопки при наведении */
 }
 
+/* Стили для сообщений об успешной отправке */
 .success {
     color: green;
     text-align: center;
+    font-size: 18px;
+    margin-bottom: 20px;
 }
