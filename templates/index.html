@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Главная страница</title>
+    <!-- Подключаем стили и скрипты -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+    <script src="{{ url_for('static', filename='scripts.js') }}" defer></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <div class="hero-background">
+        <div class="container">
+            <!-- Заголовок сайта -->
+            <h1>Добро пожаловать на главную страницу</h1>
+
+            <!-- Меню навигации -->
+            <div class="navbar">
+                <ul>
+                    <li><a href="/">Главная</a></li>
+                    <li><a href="/blog">Блог</a></li>
+                    <li><a href="/contacts">Контакты</a></li>
+                </ul>
+            </div>
+
+            <!-- Отображение текущего времени -->
+            <p><span class="clock">Текущее время:</span> <span id="clock" class="clock">{{ current_time }}</span></p>
+
+            <!-- Блок с цитатой дня -->
+            <div class="white-box">
+                <h2>Цитата дня</h2>
+                <p class="quote">{{ quote }}</p>
+            </div>
+
+            <!-- Иконки социальных сетей -->
+            <div class="social-icons">
+                <a href="https://facebook.com" target="_blank" title="Facebook"><i class="fab fa-facebook-f"></i></a>
+                <a href="https://twitter.com" target="_blank" title="Twitter"><i class="fab fa-twitter"></i></a>
+                <a href="https://instagram.com" target="_blank" title="Instagram"><i class="fab fa-instagram"></i></a>
+                <a href="https://linkedin.com" target="_blank" title="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
